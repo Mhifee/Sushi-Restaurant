@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.sushi-food{
+    display: flex;
+    text-align: center;
+    /* align-items: center; */
+    justify-content: center;
+    padding: 30px 25px;
+}
+#hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px 0 0;
+    align-items: center;
+    cursor: pointer;
+}
+.hamburger-icon div {
+    width: 30px;
+    height: 2px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+.open .bar-1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+.open .bar-2 {
+    opacity: 0;
+}
+.open .bar-3 {
+    -webkit-transform: rotate(48deg) translate(-6px, -8px);
+    transform: rotate(48deg) translate(-6px, -8px);
+}
+.mobile-menu{
+    display: none;
+    flex: 40%;
+    flex-direction: column;
+    background-color: #0C0B0B;
+    padding: 10px 0 50px 0;
+    margin-top: 10px;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    gap: 30px;
+    width: 120%;
+    box-shadow: 0 3px 20px 0 #3b2020;
+}
+.open .mobile-menu{
+    display: flex;
+}
+.letter-hero{
+    color: #F1D5BB;
+    font-size: 25px;
+    font-weight: 800;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.house, .cart, .location, .vector{
+    width: 50%;
+}
+.menu-img{
+    background-color: #F1D5BB;
+    padding: 8px 5px;
+}
+.menu-img img{
+    width: 80%;
+}
+.header{
+    display: flex;
+    justify-content: left;
+}
+.header h1{
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #F1D5BB;
+}
+.menu-images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    gap: 10px 25px;
+}
+.menu-images img{
+    width: 100%;
+}
+#menu-img p{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'Mulish', sans-serif;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+.button a{
+    background-color: #0C0B0B;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 2px;
+    font-size: 14px;
+    font-family: 'Mulish', sans-serif;
+}
+footer{
+    text-align: center;
+    font-family: 'Mulish', sans-serif;
+    padding-bottom: 30px;
+    font-weight: 500;
+    font-size: 10px;
+}
+
+@media only screen and (min-width:415px){
+    .mobile-menu{
+        gap: 45px;
+    }
+    .house, .cart, .location, .vector{
+        width: 45%;
+    }
+    .menu-img{
+        width: 99%;
+    }
+    footer{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width:455px) {
+    .header h1{
+        margin: 0 120px 30px 0 ;
+    }
+    .menu-images{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media only screen and (min-width:500px){
+    .menu-img{
+        padding: 8px;
+    }
+    .menu-img img{
+        width: 100%;
+    }
+    .menu-images{
+        gap: 18px 35px;
+    }
+}
+@media only screen and (min-width:550px){
+    .sushi-food{
+        padding: 50px 35px;
+    }
+    .menu-img{
+        padding: 5px;
+    }
+    .header h1{
+        font-size: 25px;
+        /* margin-top: 20px; */
+    }
+    .menu-images{
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px 30px;
+    }
+    .button{
+        margin-top: 35px;
+    }
+    footer{
+        text-align: left;
+        margin-left: 18%;
+    }
+}
+
+@media only screen and (min-width:700px){
+    .menu-img img{
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width:1001px){
+    .sushi-food{
+        padding: 50px;
+    }
+    .hamburger-icon{
+        display: none;
+    }
+    .mobile-menu{
+        display: flex;
+        gap: 70px;
+        margin-right: 15px;
+    }
+    .house, .cart, .location, .vector{
+        width: 35%;
+    }
+    .menu-img img{
+        width: 60%;
+    }
+    .menu-images{
+        gap: 30px 45px;
+    }
+    footer{
+        text-align: left;
+        margin-left: 15%;
+    }
+}
+
+@media only screen and (min-width:1200px){
+    .letter-hero{
+        font-size: 45px;
+    }
+    .header h1{
+        font-size: 45px;
+    }
+    .menu-img img{
+        width: 50%;
+    }
+    #menu-img p{
+        font-size: 15px;
+        padding-top: 5px;
+    }
+    .button{
+        margin-top: 40px;
+    }
+    .button a{
+        font-size: 16px;
+        padding: 15px 30px;
+    }
+    footer{
+        font-size: 14px;
+        margin-left: 17%;
+    }
+}

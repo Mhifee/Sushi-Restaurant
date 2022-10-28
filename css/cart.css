@@ -1,0 +1,422 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.sushi-cart{
+    display: flex;
+    text-align: center;
+    /* align-items: center; */
+    justify-content: center;
+    padding: 30px 25px;
+}
+#hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px 0 0;
+    align-items: center;
+    cursor: pointer;
+}
+.hamburger-icon div {
+    width: 30px;
+    height: 2px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+.open .bar-1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+.open .bar-2 {
+    opacity: 0;
+}
+.open .bar-3 {
+    -webkit-transform: rotate(48deg) translate(-6px, -8px);
+    transform: rotate(48deg) translate(-6px, -8px);
+}
+.mobile-menu{
+    display: none;
+    flex: 40%;
+    flex-direction: column;
+    background-color: #0C0B0B;
+    padding: 10px 0 50px 0;
+    margin-top: 10px;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    gap: 30px;
+    width: 120%;
+    box-shadow: 0 3px 20px 0 #3b2020;
+}
+.open .mobile-menu{
+    display: flex;
+}
+.letter-hero{
+    color: #F1D5BB;
+    font-size: 25px;
+    font-weight: 800;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.house, .menu, .location, .vector{
+    width: 50%;
+}
+.cart-img{
+    background-color: #F1D5BB;
+    padding: 8px 5px;
+}
+.cart-img img{
+    width: 70%;
+}
+.header{
+    display: flex;
+    justify-content: left;
+}
+.header h1{
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #F1D5BB;
+}
+.cart-container-1{
+    background-color: #F1D5BB;
+    padding: 10px 15px;
+    height: 430px;
+}
+.smashed-avo, .yin-yang, .pancakes, .rancheros{
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    gap: 10px;
+}
+#cart-img{
+    width: 20%;
+    padding: 30px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cart-img-1{
+    background-image: url(../images/Smashed_avo.jpg);
+}
+.cart-img-2{
+    background-image: url(../images/Yin_and_yang.jpg);
+}
+.cart-img-3{
+    background-image: url(../images/Pancake.jpg);
+}
+.cart-img-4{
+    background-image: url(../images/Rancheros_\(Tofu\).jpg);
+}
+.cart-text{
+    font-family: 'Mulish', sans-serif;
+    text-align: left;
+    flex: 20%;
+}
+.cart-text h2{
+    font-size: 14px;
+}
+.cart-text p{
+    font-size: 12px;
+    font-weight: 500;
+    padding-top: 10px;
+}
+.quantity-counter{
+    display: flex;
+    flex: 10%;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+}
+.quantity-counter input{
+    width: 20px;
+    border: 0;
+    outline: none;
+    background-color: #ffffff;
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+}
+.quantity-counter span{
+    display: block;
+    font-size: 15px;
+    padding: 0 8px;
+    cursor: pointer;
+    user-select: none;
+}
+#cancel{
+    width: 3%;
+    height: 3%;
+    display: flex;
+    justify-content: flex-end;
+}
+.cart-container-2{
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Mulish', sans-serif;
+    height: 430px;
+}
+.cart-container-2 h1{
+    font-size: 25px;
+    font-weight: 400;
+    padding: 20px 0;   
+}
+.subtotal{
+    background-color: #F1D5BB;
+    padding: 20px;
+}
+.subtotal p{
+    font-size: 18px;
+}
+.subtotal span{
+    padding-left: 20px;
+}
+#button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+button{
+    background-color: #0C0B0B;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    outline: none;
+    width: 60%;
+    border-radius: 2px;
+    font-size: 16px;
+    font-family: 'Mulish', sans-serif;
+}
+.promo-code{
+    padding: 15px 0;
+    border: 1px solid #F1D5BB;
+}
+#input-text{
+    padding: 15px;
+    font-size: 16px;
+    border:  1px solid #F1D5BB;
+    outline: none;
+    width: 60%;
+}
+input[type=submit]{
+    background-color: #0C0B0B;
+    color: white;
+    outline: none;
+    border: none;
+    margin: 20px 0 15px 0;
+    font-size: 16px;
+    padding: 10px 25px;
+}
+footer{
+    text-align: center;
+    font-family: 'Mulish', sans-serif;
+    padding-bottom: 30px;
+    font-weight: 500;
+    font-size: 10px;
+}
+
+@media only screen and (min-width:415px){
+    .mobile-menu{
+        gap: 45px;
+    }
+    .house, .menu, .location, .vector{
+        width: 45%;
+    }
+    .cart-img{
+        width: 99%;
+    }
+    footer{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width:450px) {
+    .cart-container-1{
+        padding: 20px;
+    }
+    .smashed-avo, .yin-yang, .pancakes, .rancheros{
+        gap: 30px;
+    }
+}
+
+@media only screen and (min-width:550px){
+    .cart-container-1{
+        padding: 20px 30px;
+    }
+}
+
+@media only screen and (min-width:700px){
+    .cart-img{
+        padding: 8px;
+    }
+    .cart-img img{
+        width: 70%;
+    }
+    .cart-container{
+        display: flex;
+        gap: 20px;
+    }
+    .cart-container-2{
+        margin-top: 0;
+    }
+    button{
+        padding: 15px 5px;
+    }
+}
+@media only screen and (min-width:800px){
+    .sushi-cart{
+        padding: 50px 35px;
+    }
+    .header h1{
+        font-size: 25px;
+        /* margin-top: 20px; */
+    }
+    .cart-container{
+        gap: 40px;
+    }
+    .cart-container-1{
+        padding: 20px;
+    }
+    .smashed-avo, .yin-yang, .pancakes, .rancheros{
+        gap: 20px;
+    }
+    .cart-text h2{
+        font-size: 15px;
+    }
+    .cart-text p{
+        font-size: 14px;
+    }
+    .quantity-counter{
+        flex: 2%;
+    }
+    .cart-container-2{
+        text-align: left;
+    }
+    .subtotal{
+        padding: 10px 30px 15px 30px;
+    }
+    .subtotal p{
+        font-size: 20px;
+    }
+    button{
+        width: 100%;
+        font-size: 18px;
+    }
+    .promo-code{
+        padding: 15px 30px;
+    }
+    #input-text{
+        width: 100%;
+        font-size: 18px;
+    }
+    input[type=submit]{
+        width: 50%;
+        font-size: 20px;
+    }
+    #button{
+        margin-top: 20px;
+    }
+    footer{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width:1001px){
+    .hamburger-icon{
+        display: none;
+    }
+    .mobile-menu{
+        display: flex;
+        margin-right: 20px;
+    }
+    .house, .menu, .location, .vector{
+        width: 35%;
+    }
+    .header h1{
+        font-size: 40px;
+    }
+    .cart-img{
+        padding: 20px 5px;
+    }
+    .cart-img img{
+        width: 40%;
+    }
+    footer{
+        text-align: left;
+        margin-left: 20%;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width:1150px) {
+    .sushi-cart{
+        gap: 20px;
+    }
+    .cart-container{
+        gap: 50px;
+    }
+    .cart-container-1{
+        padding: 30px;
+        height: 450px;
+    }
+    .cart-container-2{
+        height: 450px;
+    }
+    #button{
+        margin-bottom: 5px;
+    }
+    #input-text{
+        padding: 20px;
+    }
+    input[type=submit]{
+        padding: 15px 25px;
+    }
+}
+
+@media only screen and (min-width:1200px){
+    .letter-hero{
+        font-size: 45px;
+    }
+    .header h1{
+        font-size: 45px;
+    }
+    .cart-img img{
+        width: 50%;
+    }
+    .cart-container-1{
+        gap: 70px;
+    }
+    .button{
+        margin-top: 40px;
+    }
+    .button a{
+        font-size: 16px;
+        padding: 15px 30px;
+    }
+    footer{
+        font-size: 14px;
+        margin-left: 17%;
+    }
+}
+
+@media only screen and (min-width:1201px){
+    footer{
+        margin-left: 25%;
+    }
+}
+@media only screen and (min-width:1440px){
+    .cart-img img{
+        width: 35%;
+    }
+    .cart-container-1{
+        padding: 30px 50px;
+    }
+    .quantity-counter{
+        flex: 5%;
+    }
+}

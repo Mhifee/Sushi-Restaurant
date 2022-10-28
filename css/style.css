@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../images/restaurant\ 1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    height: 100vh;
+    font-family: 'Mulish', sans-serif;
+}
+.welcome{
+    padding: 50px;
+    text-align: center;
+    background-image: url(../images/keyboard_arrow_left_24px.jpg), url(../images/keyboard_arrow_right_24px.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left 20px top 70%, right 20px top 70%;
+    background-size: 10px;
+}
+.welcome h1{
+    font-size: 40px;
+    margin-top: 20px;
+    font-weight: 400;
+}
+span{
+    font-weight: 800;
+}
+.welcome p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    padding: 30px 0;
+}
+.button{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 25px;
+}
+.button a{
+    color: black;
+    font-size: 14px;
+    font-weight: 300;
+    background-color: #ffffff;
+    border-radius: 2px;
+    padding: 10px 30px;
+}
+
+@media  only screen and (min-width:603px){
+    .welcome{
+        background-position: left 30px top 70%, right 30px top 70%;
+        background-size: 15px;
+    }
+    .welcome h1{
+        margin-top: 100px;
+    }
+    .welcome p{
+        padding: 30px;
+    }
+    .button{
+        flex-direction: row;
+        gap: 20px;
+    }
+    .button a{
+        padding: 10px 40px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .welcome{
+        background-position: left 50px top 75%, right 50px top 75%;
+    }
+    .welcome h1{
+        font-size: 60px;
+        margin-top: 50px;
+    }
+    .welcome p{
+        font-size: 25px;
+        line-height: 35px;
+        padding: 50px 240px;
+    }
+    .button a{
+        font-size: 25px;
+        padding: 15px 70px;
+    }
+}
+
+@media only screen and (min-width:1440px){
+    .welcome{
+        background-size: 20px;
+    }
+    .welcome p{
+        padding: 50px 200px;
+    }
+}
